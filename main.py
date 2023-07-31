@@ -34,7 +34,6 @@ class YouTubeDownloaderApp(App):
             self.status_label.text = "Download completed!"
         except Exception as e:
             self.status_label.text = f"Error: {str(e)}"
-
     def download_button_clicked(self, instance):
         url = self.url_input.text
         path = self.path_input.text
